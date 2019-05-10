@@ -14,10 +14,11 @@
     - name: Install apache2 apt package
       apt:
         name: 
+        state: 
     
     - name: Copy index.html into /var/www/html, set the owner and group to www-data
       copy:
         src: 
         dest: 
-        owner:
+        owner: 
         group: 
