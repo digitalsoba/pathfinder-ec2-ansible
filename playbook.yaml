@@ -9,16 +9,16 @@
 
     - name: Update apt cache repository
       apt:
-        update_cache: 
+        update_cache: true
     
     - name: Install apache2 apt package
       apt:
-        name: 
-        state: 
+        name: apache2
+        state: present
     
     - name: Copy index.html into /var/www/html, set the owner and group to www-data
       copy:
-        src: 
-        dest: 
-        owner: 
-        group: 
+        src: index.html
+        dest: /var/www/html
+        owner: www-data
+        group: www-data
